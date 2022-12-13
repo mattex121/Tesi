@@ -17,17 +17,43 @@ Sono considerate fonti rinnovabili tutte quelle provenienti da:
 \subsection{Irraggiamento solare}
 
 La radiazione solare è l'energia emessa dal sole, generata a partire da reazioni termonucleari di fusione che avvengono nel sole producendo radiazioni elettromagnetiche a diversa frequenza e lunghezza d'onda le quali trasportano l'energia solare.\\
-La radiazione solare che raggiunge il livello più alto dell'atmosfera terrestre è mediamente \(1368\frac{W}{m^2}\) chiamata costante solare.\\
-Questo valore rappresenta la quantità di energia trasmessa ad un disco di diametro uguale a quello terrestre posto tangenzialmente al livello più alto dell'atmosfera. Per ottenere il valore medio per $m^2$ che arriva sulla terra bisogna quindi considerarne la superficie esterna arrivando ad un valore medio di 342$\frac{W}{m^2}$\footnote{Valore considerato sempre nel livello superiore dell'atmosfera}.\\
+La radiazione solare che raggiunge il livello più alto dell'atmosfera terrestre è mediamente \(1367\frac{W}{m^2}\) chiamata costante solare (\textit{S}).\\
+\textit{S} rappresenta la quantità di energia trasmessa ad un disco di diametro uguale a quello terrestre posto tangenzialmente al livello più alto dell'atmosfera.
+%Essendo però la terra assimilabile ad una sfera che ruota attorno al proprio asse,per ottenere il valore medio per unità di tempo di radiazioni che arriva su di essa bisogna quindi considerarne la superficie esterna arrivando ad un valore medio di circa 342$\frac{W}{m^2}$\footnote{Valore considerato sempre nel livello superiore dell'atmosfera}.\\
 \newpage\noindent
-In buona approssimazione considerando:
+In buona approssimazione considerando\cite{captazione-enegia-solare}:
 \begin{itemize}
     \item fenomeni di riflessione dati dalle nuvole
     \item fenomeni di riflessione dati dalle polveri presenti in atmosfera
     \item fenomeni di interazione chimica con i gas presenti in atmosfera
     \item fenomeni di scattering
 \end{itemize}
-Si stima che sulla superficie terrestre arrivi un valore(medio) di circa il 50\% inferiore rispetto a quello presente al livello più esterno dell'atmosfera quindi di circa \(170\frac{W}{m^2}\).\\
+A causa dei fenomeni elencati sopra,le radiazioni solari che arrivano al suolo presentano quindi due componenti:
+\begin{itemize}
+    \item diretta, cioè la componente che raggiunge il suolo senza venir in alcun modo perturbata e quindi con la stessa direzione del sole
+    \item diffusa, costituita dalla componente che raggiunge il suolo dopo essere stata dispersa,assorbita ed eventualmente re-irraggiata
+\end{itemize}
+La presenza di due componenti risulta di fondamentale importanza durante il processo di captazione e quindi va tenuta in considerazione durante la scelta della tipologia di impianto da installare, argomento che verrà trattato nel capitolo successivo.
+L'industria statunitense in collaborazione con l'ASTM\footnote{American Society for Testing and Materials} ha definito tre standard:
+\begin{enumerate}
+    \item AM0
+    \item AM1.5-f
+    \item AM1-37$^\circ$
+\end{enumerate}
+Prima di andare a spiegare questi tre standard è importante definire un valore m tale da rispettare la seguente proporzione matematica $m=\frac{1}{\cos z}$ come si evince nella figura sottostante:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{res/cap2/rappresentazione m}
+    \caption{Percorso delle radiazioni solari}
+\end{figure}
+Il primo standard fa riferimento all'irradianza nel livello più alto dell'atmosfera,
+gli altri invece all'irradianza che giunge al suolo dopo un percorso di lunghezza m = 1,5 in un'atmosfera limpida, dove per limpida si considera una visibilità di 23 km.
+La seconda fa nello specifico riferimento ad una superficie $A_n$ ortogonale ai raggi solari,la seconda fa riferimento ad una superficie $A_i$ rivolta a sud ed inclinata di un'angolo $\beta = 37^\circ$ rispetto al piano orizzontale, nell'impotesi di un coefficiente di riflessione $\rho_s = 0,2$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{res/cap2/standard}
+    \caption{Rappresentazione superfici stanadard AM1.5-f AM1-37$^\circ$}
+\end{figure}
 L'energia trasportata dalle radiazioni solari possiamo dividerla sostanzialmente in due componenti:
 \begin{itemize}
     \item \textbf{Componente visibile:} quella con lunghezza d'onda [\textbf{$\lambda$}] tra i 400 ed i 700 nm
@@ -37,13 +63,14 @@ L'energia trasportata dalle radiazioni solari possiamo dividerla sostanzialmente
             \item \textbf{infrarossi} \textbf{$\lambda$} tra i 700nm ed 1mm
         \end{itemize}
 \end{itemize}
-
+Successivamente questa ulteriore suddivisione ci sarà utile per spiegare alcune tecnologie che in grado di lavorare sulle singole componenti.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{res/luce_dettagli.png}
+    \includegraphics[width=0.8\textwidth]{res/cap2/luce_dettagli}
     \caption{Radiazione solare}
 \end{figure}
 
+\newpage
 \subsection{Vento}
 
 Quello che comunemente viene chiamato vento è il movimento di una massa d'aria da una regione ad alta pressione ad una a bassa pressione.\\
@@ -60,7 +87,7 @@ Per contenuto energetico si intente l'energia cinetica che l'aria ha in moviment
 \end{center}
 \noindent
 Possiamo notare come l'energia cinetica che la massa d'aria considerata possiede dipende da da tutti i parametri sopra elencati, capire il modo in cui essi partecipano al bilancio energetico ci permetterà nei capitoli successivi di comprendere il funzionamento degli impianti eolici.
-\newpage
+
 \subsection{Biomasse}
 Per biomasse intendiamo tutta quella serie di prodotti organici usati per produrre calore od elettricità in specifici impianti appositamente progettate.\\
 Sono classificabili in base al fatto che vengano o meno prodotte per generare energia elettrica\cite{IRENA}:
@@ -77,15 +104,15 @@ Una volta specificato tutto ciò che è considerabile biomassa andiamo ad elenca
     \item[$\bullet$ Conversione termica] in questa tipologia si procede tramite un riscaldamento della biomassa per produrre combustibili in vario stato. In questa categoria sono a loro volta inserite tre tecniche che vanno a loro volta a generate combustibili in diverso stato:
     \begin{description}[labelindent=5mm]
         \item[$\cdot$ Torrefazione:] processo che prevede il riscaldamento della biomassa ad una temperatura compresa tra i 200 ed i 300\degree C in un ambiente quasi privo di ossigeno, dalla biomassa vengono rimosse le componenti a contenuto energetico più basso. Il 30\% viene quindi convertito in gas mentre la restante parte rimane sotto forma di bricchetti solidi o pellet mantenendo però circa l'85\% dell'energia originaria della biomassa\cite{Torrification}. 
-        \item[$\cdot$ Pirolisi:] processo che comporta un riscaltamento dei materiali organici ad una temperatura tra i 400 ed i 500\degree C in quasi assenza di ossigeno. Da questo processo vengono generate sostanze quali: bio-oli, carbone, metano ed idrogeno.\\
-        Partendo dal bio-olio e trammite un successivo processo di idrotrattamento a temperatura e pressione elevata si possono produrre biocarburanti\cite{EIA2021}.
-        \item[$\cdot$ Gassificazione:] processo anch'esso che prevede un riscaldamento delle biomasse ad una temperatura compresa tra gli 800 ed i 900\degree C questa volta però inserendo in modo controllato ossigeno e/o vapore acqueo con l'obbiettivo di produrre "syngas" il quale potrà poi essere usato per scopi energetici.\cite{EIA2022}
+        \item[$\cdot$ Pirolisi:] processo che comporta un riscaldamento dei materiali organici ad una temperatura tra i 400 ed i 500\degree C in quasi assenza di ossigeno. Da questo processo vengono generate sostanze quali: bio-oli, carbone, metano ed idrogeno.\\
+        Partendo dal bio-olio e tramite un successivo processo di idrotrattamento a temperatura e pressione elevata si possono produrre biocarburanti\cite{EIA2021}.
+        \item[$\cdot$ Gassificazione:] processo anch'esso che prevede un riscaldamento delle biomasse ad una temperatura compresa tra gli 800 ed i 900\degree C questa volta però inserendo in modo controllato ossigeno e/o vapore acqueo con l'obbiettivo di produrre \enquote{syngas} il quale potrà poi essere usato per scopi energetici.\cite{EIA2022}
     \end{description}
     \item[$\bullet$ Conversione chimica] questa categoria comprende una serie di processi chimici che hanno lo scopo di trasformare le biomasse in una forma più facile da trasportare ed immagazzinare.\\
-    Molti di essi sono simili al processo per produrre "syngas" spiegato nel punto precedente, un'esempio è un processo chiamato "transesterificazione" nel quale una sostanza organica viene fatta reagire con dell'alcool per produrre biocarburanti.\cite{EIA2022}
+    Molti di essi sono simili al processo per produrre \enquote{syngas} spiegato nel punto precedente, un'esempio è un processo chiamato \enquote{transesterificazione} nel quale una sostanza organica viene fatta reagire con dell'alcool per produrre biocarburanti.\cite{EIA2022}
     \item[$\bullet$ Conversione biologica] in questa sezione sono inseriti tutti quei processi che sfruttano microrganismi per un processo di conversione, tra questi cito: digestione anaerobica, fermentazione e compostaggio.\\ Lo scopo è quello di trasformare la biomassa in sostanze quali bioetanolo o biogas. 
 \end{description}
-\newpage
+
 \subsection{Maree}
 Le maree sono il naturale cambiamento del livello del mare causato da una combinazione di effetti gravitazionali della luna, del sole e legati alla rotazione terrestre.\\Il cambiamento di marea attraversa due stati fondamentali,quando il livello smette di diminuire raggiungendo un minimo locale ci troviamo in uno stato chiamato bassa marea, viceversa quando smette di crescere raggiunge uno stato di massimo locale parliamo di alta marea.\\
 Sono presenti,in prima approssimazione, due componenti fondamentali le quali poi avranno anch'esse delle componenti specifiche chiamati costituenti:\\
@@ -120,13 +147,14 @@ I dati riportati nelle tabelle soprastanti ci indicano le componenti principali 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.3\textwidth]{res/cap2/Tidal_constituent_sum.png}
+    \includegraphics[width=0.3\textwidth]{res/cap2/Tidal_constituent_sum}
     \caption{Curva ottenuta dai costituenti}
 \end{figure}
 
 Si nota come la curva ottenuta sia la somma delle componenti, essa rappresenta l'andamento della marea dato dalle componenti principali e più rilevanti.\\
 Ci sono inoltre fattori influenzano l'andamento delle maree che non dipendono solamente dai puri dati numerici sopra indicati correlati all'orario od alla stagione in cui ci si trova ma anche dalla realtà in cui ci si trova geografica si trova.\\
 Il livello del mare nelle coste francesi mediterranee ad esempio oscilla meno di quanto avviene sulle coste francesi che danno sull'oceano in quanto la presenza di stretti non permette all'acqua di mantenere un'andamento di discesa/salita lineare ma lo altera. Da qui la difficoltà maggiore di riuscire a creare un modello predittivo affidabile per realtà particolare quali la città di Venezia a esempio.
+\newpage
 \subsection{Correnti marine}
 Con corrente marina intendiamo una massa d'acqua in movimento rispetto a quella che la circonda e che può avere una differente densità,salinità o temperatura.\\
 Gli effetti principali che provocano la formazione di queste correnti sono:\cite{NOAA-current}
@@ -135,12 +163,12 @@ Gli effetti principali che provocano la formazione di queste correnti sono:\cite
     \item Differenza di temperatura
     \item Differenza di salinità
     \item Rottura del moto ondoso
-    \item "Cabbeling"
+    \item \enquote{Cabbeling}
 \end{itemize}\noindent
-Si parla di "Cabbeling" quando abbiamo due basse d'acqua denominate con A e B le quali andando a mescolarsi formeranno una nuova massa d'acqua che ha una densità superiore a quella di A e B
+Si parla di \enquote{Cabbeling} quando abbiamo due basse d'acqua denominate con A e B le quali andando a mescolarsi formeranno una nuova massa d'acqua che ha una densità superiore a quella di A e B
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{res/cap2/temperature-salinity.png}
+    \includegraphics[width=0.5\textwidth]{res/cap2/temperature-salinity}
     \caption{Diagramma Temperatura salinità ed effetto "Cabbeling"}
 \end{figure}\noindent
 La dinamica che descrive le varie correnti parte da una divisione dell'oceano in tre livelli:
@@ -152,11 +180,11 @@ La dinamica che descrive le varie correnti parte da una divisione dell'oceano in
 Con linea termoclina identifichiamo un livello nella quale avviene un'importante rimescolamento dell'acqua e nel quale c'è quindi una più veloce variazione di temperatura, un'esempio si può vedere nel grafico riportato sotto:
 \begin{figure}[H]
     \centering
-    \includegraphics[height=0.4\textwidth]{res/cap2/termoclino.png}
+    \includegraphics[height=0.4\textwidth]{res/cap2/termoclino}
     \caption{Variazione di temperatura in funzione della profondità}
 \end{figure}\noindent
 Tutte le corrente oceaniche di superficie sono solitamente guidate da correnti ventose, venti che sono influenzati in gran parte dall'effetto di Coriolis sopra citato.\\
-Le correnti più profonde sono mosse da un fenomeno chiamato: "Circolazione termoalina".
+Le correnti più profonde sono mosse da un fenomeno chiamato: \enquote{Circolazione termoalina}.
 Esso è a sua volte correlato a fenomeni fisici legati alla variazione di densità e di temperatura, i principali agenti che provocano una variazione di temperatura o densità sono il calore proveniente da livelli superiori e la differenza di densità provocata da grandi flussi d'acqua dolce provenienti sempre da i livelli superiori.\\
 
 \subsection{Precipitazioni}
@@ -247,7 +275,7 @@ Si differenziano per una crescente percentuale di carbonio e per la diminuzione 
 Per andare a proporre un bilancio energetico come per il gas naturale è stato anche qui necessario fare delle semplificazioni, il tutto è iniziato con un'analisi su quale fosse il carbone fossile maggiormente utilizzato negli anni per capire quale convenisse prendere in esame:\cite{EIA-Statistics-World}\\
 \begin{figure}[H]
     \centering
-    \includegraphics[height=0.6\textwidth]{res/cap2/Grafico carbone.png}
+    \includegraphics[height=0.6\textwidth]{res/cap2/Grafico carbone}
     \caption{Grafico rappresentate la quantità di carbone estratta globalmente negli ultimi 40 anni}
 \end{figure}\noindent
 Prenderemo quindi il litantrace bituminoso il quale è il più largamente estratto e consumato, risulta che abbia la seguente composizione in peso:\cite{Composizione-antracite}\\
@@ -260,8 +288,7 @@ Prenderemo quindi il litantrace bituminoso il quale è il più largamente estrat
 \end{itemize}
 Si noti come in questo caso vi è un contenuto anche di altre sostante oltre ad idrogeno e carbonio tra le quali si evidenzia lo zolfo la cui presenza porta a dei residui di combustione altamente impattanti a livello ambientale.\\
 Data la formazione chimica più complessa andare a portare una grossa semplificazione come fatto in precedenza riporterebbe un dato totalmente falsato e poco significativo; per questo motivo sarà riportato il valore contenuto in alcune tabelle che si attesta attorno ai  $20\frac{KJ}{Kg}$ valore che spesso, data la formazione chimica del carbone che può variare di molto da giacimento a giacimento, viene calcolato sperimentalemente.\\
-Il prezzo riportato in questo caso è in $\frac{\$}{short ton}$ una "short ton" equivale a 2000lb quindi a circa 907kg, tenendo conto del potere calorifero riportato in precedenza si arriva ad un valore finale di circa $0,01\frac{\$}{MJ}$.
-\newpage
+Il prezzo riportato in questo caso è in $\frac{\$}{short ton}$ una \enquote{short ton} equivale a 2000lb quindi a circa 907kg, tenendo conto del potere calorifero riportato in precedenza si arriva ad un valore finale di circa $0,01\frac{\$}{MJ}$.
 \subsection{Petrolio}
 Il petrolio una volta estratto deve subire diverse lavorazioni prima di poter venir usato per produrre energia, il processo che porta il petrolio ad essere frazionato è quello della distillazione.\\
 Il processo di lavorazione del petrolio si compone di diverse fasi le quali avvengono in sequenza sui diversi componenti estratti per andare a sfruttare al massimo la materia prima.\\

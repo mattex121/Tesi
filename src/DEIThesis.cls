@@ -270,7 +270,7 @@
   \thiswatermark{
     \centering
     \put(-380,-700) {
-      \includegraphics[width=1.4\linewidth]{res/10}
+      \includegraphics[width=1.4\linewidth]{res/logos/10}
     }
   }
 
@@ -279,7 +279,7 @@
 
   % set brands in header
   \lhead{
-    \includegraphics[height=3cm]{res/logo}
+    \includegraphics[height=3cm]{res/logos/logo}
   }
 
   % content
