@@ -60,6 +60,7 @@
 
 % graphics
 \RequirePackage{graphicx}
+\RequirePackage{wrapfig}
 
 % chem and algo
 \RequirePackage{chemmacros}

@@ -3,13 +3,13 @@
 \chapter{Photovoltaic Geographical Information System(PGIS)}
 \label{chp:Photovoltaic Geographical Information System(PGIS)}
 
-\section{Introduzione al tool}
+\section{Introduzione al tool(PVGIS)}
 Il tool in questione è sviluppato e reso disponibile a titolo gratuito dal \enquote{Joint Research Centre}; Fornice un'interfaccia user friendly per accedere ad un database contenente dati sull'irradianza in differenti locazioni geografiche e permette di calcolare grafici di produzione o di esportare dati specifici sulle condizioni meteo di una determinata zona.\\
-E' possibile accedere al \href{https://re.jrc.ec.europa.eu/pvg_tools/it/}{\underline{PGSI tool}} trovandosi a lavorare con quest'interfaccia:\\
+E' possibile accedere al \href{https://re.jrc.ec.europa.eu/pvg_tools/it/}{\underline{PVGIS tool}} trovandosi a lavorare con quest'interfaccia:\\
 \begin{figure}[H]
     \centering
     \includegraphics[height=0.5\textwidth]{res/cap 4/PGIS_schermata principale}
-    \caption{Interfaccia PGIS}
+    \caption{Interfaccia PVGIS}
 \end{figure}\noindent
 La prima scelta che va fatta per iniziare ad usar il tool è quella di scegliere una locazione, in questo esempio verrà utilizzata come posizione quella del polo scientifico dell'università di udine(46.081, 13.212).\\
 Si procederà poi scegliendo se inserire un file contenente i dati dell'orizzonte o se procedere con un calcolo automatico di esso.
@@ -76,6 +76,7 @@ E' possibile inoltre specificare manualmente il proprio profilo di consumo per r
     \centering
     \includegraphics[height=0.5\textwidth]{res/cap 4/dati mensili}
     \caption{Scheda dati mensili}
+    \label{fig:export mensile}
 \end{figure}\noindent
 Tramite questa scheda una volta selezionato l'orizzonte temporaneo da prendere in analisi, il range disponibile dipende dal modello scelto, per quello presente in'immagine ad esempio sono presenti dati dal 2005 al 2020.
 L'export può comprendere tutti i dati in figura:
@@ -96,6 +97,7 @@ Tramite questa scheda una volta selezionato il mese che si intende valutare  ed 
 Questa scheda risulta molto comoda per confrontare soluzioni fisse con soluzioni ad inseguimento, per entrambe si possono ottenere dati sull'irradianza con cielo sia considerando che non la nuvolosità del cielo
 
 \subsection{Export dati orario}
+\label{subsec:export orario}
 \begin{figure}[H]
     \centering
     \includegraphics[height=0.5\textwidth]{res/cap 4/dati orari}
@@ -113,6 +115,7 @@ Tutte le simulazione hanno in comune un grafico riportante l'orizzonte nelle div
     \centering
     \includegraphics[height=0.5\textwidth]{res/cap 4/orizzonte}
     \caption{Diagramma contenente linea orizzonte ed altezza sole}
+    \label{fig:orizzonte}
 \end{figure}\noindent
 Dal diagramma possiamo notare come la posizione scelta non subisca interferenza di ostruzioni naturali(montagne, colline), se si volesse tracciare anche l'interferenza di elementi più piccoli bisognerebbe inserire manualmente un profilo dell'orizzonte.
 La simulazione sarà effettuata con per un'impianto tradizionale da 1Kwp inizialmente lasciando definire gli angoli di inclinazione e orientamento al software.
@@ -120,6 +123,7 @@ La simulazione sarà effettuata con per un'impianto tradizionale da 1Kwp inizial
     \centering
     \includegraphics[height=0.5\textwidth]{res/cap 4/fissi uniud-auto}
     \caption{Export dati modulo fisso con orientazione automatica}
+    \label{fig:export}
 \end{figure}\noindent
 Si può notare come il software abbia ovviamente orientato i moduli a sud, l'angolo è stato scelto per avere una resa media ottima in tutto l'anno.
 Scegliere un'angolo minore incrementerebbe la produzione nei mesi estivi ma porterebbe un netto peggioramento in quelli invernali, un'inclinazione superiore ai 40 gradi invece gioverebbe nel periodo invernale ma sarebbe peggiorativa in quello estivo.
