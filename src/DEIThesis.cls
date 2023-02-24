@@ -346,7 +346,7 @@
 
 % -- ABSTRACT --
 
-\newenvironment{abstract}[1][en] {
+\newenvironment{abstract}[1][it] {
   % get argument (en/it)
   \def\it{it}
   \def\arg{#1}
@@ -405,10 +405,6 @@
   
   \cleardoublepage
   \phantomsection
-
-  % add acknowledgments
-  \addcontentsline{toc}{chapter}{\acknowledgmentsname}
-  \acknowledgments
 }
 
 
